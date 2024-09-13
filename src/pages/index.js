@@ -21,7 +21,7 @@ import AminitiesItem from "@/components/aminities/item";
 import TestimonialCarouselItem from "@/components/testimonialCarousel";
 import testimonialData from "@/data/testimonial";
 // import BlogItem from "@/components/blog";
-import blogData from "@/data/blog";
+// import blogData from "@/data/blog";
 import featuresData from "@/data/service";
 
 function HomePage(props) {

@@ -2,14 +2,14 @@ import Link from "next/link";
 import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
-import { getProductCartQuantity } from "@/lib/product";
+// import { getProductCartQuantity } from "@/lib/product";
 import { useDispatch, useSelector } from "react-redux";
-import { addToCart } from "@/store/slices/cart-slice";
-import {
-  addToWishlist,
-  deleteFromWishlist,
-} from "@/store/slices/wishlist-slice";
-import { addToCompare, deleteFromCompare } from "@/store/slices/compare-slice";
+// import { addToCart } from "@/store/slices/cart-slice";
+// import {
+//   addToWishlist,
+//   deleteFromWishlist,
+// } from "@/store/slices/wishlist-slice";
+// import { addToCompare, deleteFromCompare } from "@/store/slices/compare-slice";
 
 import {
   FaShoppingBag,
@@ -52,12 +52,12 @@ const QuickViewModal = ({
   );
   const [quantityCount, setQuantityCount] = useState(1);
 
-  const productCartQty = getProductCartQuantity(
-    cartItems,
-    productData,
-    selectedProductColor,
-    selectedProductSize
-  );
+  // const productCartQty = getProductCartQuantity(
+  //   cartItems,
+  //   productData,
+  //   selectedProductColor,
+  //   selectedProductSize
+  // );
 
   return (
     <Modal
@@ -156,20 +156,20 @@ const QuickViewModal = ({
                           <button
                             onClick={() =>
                               dispatch(
-                                addToCart({
-                                  ...productData,
-                                  quantity: quantityCount,
-                                  selectedProductColor: selectedProductColor
-                                    ? selectedProductColor
-                                    : product.selectedProductColor
-                                    ? product.selectedProductColor
-                                    : null,
-                                  selectedProductSize: selectedProductSize
-                                    ? selectedProductSize
-                                    : product.selectedProductSize
-                                    ? product.selectedProductSize
-                                    : null,
-                                })
+                                // addToCart({
+                                //   ...productData,
+                                //   quantity: quantityCount,
+                                //   selectedProductColor: selectedProductColor
+                                //     ? selectedProductColor
+                                //     : product.selectedProductColor
+                                //     ? product.selectedProductColor
+                                //     : null,
+                                //   selectedProductSize: selectedProductSize
+                                //     ? selectedProductSize
+                                //     : product.selectedProductSize
+                                //     ? product.selectedProductSize
+                                //     : null,
+                                // })
                               )
                             }
                             disabled={productCartQty >= productStock}
@@ -186,12 +186,12 @@ const QuickViewModal = ({
                       <li>
                         <button
                           className="btn-addtocart"
-                          onClick={
-                            wishlistitem !== undefined
-                              ? () =>
-                                  dispatch(deleteFromWishlist(productData.id))
-                              : () => dispatch(addToWishlist(productData))
-                          }
+                          // onClick={
+                          //   wishlistitem !== undefined
+                          //     ? () =>
+                          //         dispatch(deleteFromWishlist(productData.id))
+                          //     : () => dispatch(addToWishlist(productData))
+                          // }
                         >
                           <FaRegHeart />
                         </button>
@@ -199,12 +199,12 @@ const QuickViewModal = ({
                       <li>
                         <button
                           className="btn-addtocart"
-                          onClick={
-                            compareitem !== undefined
-                              ? () =>
-                                  dispatch(deleteFromCompare(productData.id))
-                              : () => dispatch(addToCompare(productData))
-                          }
+                          // onClick={
+                          //   compareitem !== undefined
+                          //     ? () =>
+                          //         dispatch(deleteFromCompare(productData.id))
+                          //     : () => dispatch(addToCompare(productData))
+                          // }
                         >
                           <FaExchangeAlt />
                         </button>

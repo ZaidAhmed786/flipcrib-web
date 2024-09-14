@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import TitleSection from "@/components/titleSection";
-import { productSlug } from "@/lib/product";
+// import { productSlug } from "@/lib/product";
 function Feature({
   data,
   iconTag,
@@ -25,7 +25,7 @@ function Feature({
               />
             </Col>
           </Row>
-          <Row className="justify-content-center">
+          {/* <Row className="justify-content-center">
             {data.map((item, key) => {
               const slug = productSlug(item.title);
               return (
@@ -70,7 +70,7 @@ function Feature({
                 </Col>
               );
             })}
-          </Row>
+          </Row> */}
         </Container>
       </div>
     </>

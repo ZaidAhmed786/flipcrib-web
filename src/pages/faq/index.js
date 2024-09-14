@@ -13,8 +13,8 @@ import Slider from "react-slick";
 import { productSlug } from "@/lib/product";
 import TitleSection from "@/components/titleSection";
 import ShopBreadCrumb from "@/components/breadCrumbs/shop";
-import BlogItem from "@/components/blog";
-import blogData from "@/data/blog";
+// import BlogItem from "@/components/blog";
+// import blogData from "@/data/blog";
 import CallToAction from "@/components/callToAction";
 import Accordion from "react-bootstrap/Accordion";
 import ModalVideo from "react-modal-video";
@@ -295,7 +295,7 @@ function Faq() {
                 />
               </Col>
             </Row>
-            <Slider
+            {/* <Slider
               {...blogSettings}
               className="ltn__blog-slider-one-active slick-arrow-1 ltn__blog-item-3-normal"
             >
@@ -310,7 +310,7 @@ function Faq() {
                 />
                 );
               })}
-            </Slider>
+            </Slider> */}
           </Container>
         </div>
         {/* <!-- BLOG AREA END --> */}

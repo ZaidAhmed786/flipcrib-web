@@ -6,7 +6,7 @@ import { getProducts, productSlug } from "@/lib/product";
 import TitleSection from "@/components/titleSection";
 import ShopBreadCrumb from "@/components/breadCrumbs/shop";
 import BlogItem from "@/components/blog";
-import blogData from "@/data/blog";
+// import blogData from "@/data/blog";
 import CallToAction from "@/components/callToAction";
 import AboutUsStyletwo from "@/components/aboutUs/aboutUsStyleTwo";
 import Feature from "@/components/features";
@@ -92,7 +92,7 @@ function Service() {
                 />
               </Col>
             </Row>
-            <Slider
+            {/* <Slider
               {...blogSettings}
               className="ltn__blog-slider-one-active slick-arrow-1 ltn__blog-item-3-normal"
             >
@@ -102,7 +102,7 @@ function Service() {
                   <BlogItem key={key} baseUrl="blog" data={data} slug={slug} />
                 );
               })}
-            </Slider>
+            </Slider> */}
           </Container>
         </div>
         {/* <!-- BLOG AREA END --> */}

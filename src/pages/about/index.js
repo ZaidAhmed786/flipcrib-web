@@ -7,17 +7,17 @@ import TitleSection from "@/components/titleSection";
 import ShopBreadCrumb from "@/components/breadCrumbs/shop";
 import TestimonialCarouselItem from "@/components/testimonialCarousel";
 import testimonialData from "@/data/testimonial";
-import BlogItem from "@/components/blog";
-import blogData from "@/data/blog";
+// import BlogItem from "@/components/blog";
+// import blogData from "@/data/blog";
 import CallToAction from "@/components/callToAction";
 import AboutUsStyleOne from "@/components/aboutUs/aboutUsStyleOne";
 import Feature from "@/components/features";
 import featureData from "@/data/service"
-import TeamItem from "@/components/team";
-import TeamData from '@/data/team';
+// import TeamItem from "@/components/team";
+// import TeamData from '@/data/team';
 
 function AboutUs() {
-  const agents = getProducts(TeamData, "buying", "featured", 3);
+  // const agents = getProducts(TeamData, "buying", "featured", 3);
   const featureDataSorted = getProducts(featureData, "buying", "featured", 3);
 
   const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
@@ -110,7 +110,7 @@ function AboutUs() {
               </Col>
             </Row>
 
-            <Row>
+            {/* <Row>
               {agents.map((data, key) => {
                 const slug = productSlug(data.name);
                 return (
@@ -119,7 +119,7 @@ function AboutUs() {
                   </Col>
                 );
               })}
-            </Row>
+            </Row> */}
 
 
           </Container>
@@ -175,7 +175,7 @@ function AboutUs() {
                 />
               </Col>
             </Row>
-            <Slider
+            {/* <Slider
               {...blogSettings}
               className="ltn__blog-slider-one-active slick-arrow-1 ltn__blog-item-3-normal"
             >
@@ -185,7 +185,7 @@ function AboutUs() {
                   <BlogItem key={key} baseUrl="blog" data={data} slug={slug} />
                 );
               })}
-            </Slider>
+            </Slider> */}
           </Container>
         </div>
         {/* <!-- BLOG AREA END --> */}

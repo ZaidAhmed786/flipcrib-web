@@ -125,11 +125,11 @@ const Footer = function () {
                   <div className="footer-menu">
                     <ul>
                       <li>
-                        <Link href="/about">Terms & Conditions</Link>
+                        <Link href="/trems-condition">Terms & Conditions</Link>
                       </li>
 
                       <li>
-                      <Link href="#">Privacy & Policy</Link>
+                      <Link href="/privacy-policy">Privacy & Policy</Link>
                       </li>
 
                       <li>
@@ -180,11 +180,11 @@ const Footer = function () {
                 <div className="ltn__copyright-menu text-end">
                   <ul>
                     <li>
-                      <Link href="#">Terms & Conditions</Link>
+                      <Link href="/trems-condition">Terms & Conditions</Link>
                     </li>
                   
                     <li>
-                      <Link href="#">Privacy & Policy</Link>
+                      <Link href="/privacy-policy">Privacy & Policy</Link>
                     </li>
                     <li>
                         <Link href="/about"> Disclaimer</Link>

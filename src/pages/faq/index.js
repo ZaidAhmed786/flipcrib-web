@@ -307,7 +307,7 @@ function Faq() {
                   baseUrl="blog"
                   data={data}
                   slug={slug}
-                />
+                />  
                 );
               })}
             </Slider> */}
